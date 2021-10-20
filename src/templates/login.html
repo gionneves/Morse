@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+
+{% block title %} Morse! - Login {% endblock %}
+
+{% block content %}
+
+<div class="text-center my-5">
+    <h3>
+       Bem vindo ao Morse!
+    </h3>
+    <h5 class="text-muted">Por favor, faça o Login</h5>
+</div>
+
+<div class="row">
+    <div class="col"></div>
+        <div class="col border rounded p-3">
+            <form action="" method="post">
+                <div class="mb-3">
+                    <label for="emailUser" class="form-label">Usuário</label>
+                    <input type="text" name="emailUser" id="emailUser" class="form-control" placeholder="usuario.exemplo" required>
+                    <br>
+                </div>
+                <div class="mb-3">
+                    <label for="passUser" class="form-label">Senha</label>
+                    <input type="password" name="passUser" id="passUser" class="form-control" required>
+                </div>
+        
+                <button type="submit" class="btn btn-dark px-4">Entrar</button>
+            </form>
+        </div>
+        
+    <div class="col"></div>
+</div>
+
+{% endblock %}
